@@ -22,6 +22,8 @@ $ npm run start:prod
 ```
 
 ## Access and use
+
+### GraphQL
 ```bash
 http://localhost:3000/graphql
 ```
