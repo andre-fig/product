@@ -26,7 +26,7 @@ $ npm run start:prod
 http://localhost:3000/graphql
 ```
 
-#Create product
+### Create product
 
 ```bash
 mutation{
@@ -44,7 +44,7 @@ mutation{
 }
 ```
 
-# Get products 
+### Get products 
 ```bash
 {
   getProducts {
@@ -57,7 +57,20 @@ mutation{
 }
 ```
 
-# Update product
+### Get product by ID
+```bash
+{
+  getProduct (id : 1) {
+    id,
+    name,
+    producer,
+    amount,
+    price
+  }
+}
+```
+
+### Update product
 ```bash
 mutation{
   updateProduct(updateProductData: {
@@ -76,4 +89,61 @@ mutation{
 }
 ```
 
-#
+### Delete product
+```bash
+mutation {
+  deleteProduct(deleteProductData: { id: 1 }) {
+    name,
+    producer,
+    amount,
+    price
+  }
+}
+```
+
+### Out of stock products (less than 5 items)
+```bash
+{
+  getProductOutOfStock{
+    id,
+    name,
+    amount,
+    producer,
+    price
+  }
+}
+```
+
+### Product with less stock 
+```bash
+{
+  getProductLessStock{
+    id,
+    name,
+    price,
+    producer,
+  	amount
+  }
+}
+```
+
+
+### Product with the highest stock
+```bash
+{
+  getProductHighestStock{
+    id,
+    name,
+    price,
+    producer,
+  	amount
+  }
+}
+```
+
+### Quantity of products 
+```bash
+{
+	productsCount
+}
+```
