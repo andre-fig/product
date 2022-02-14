@@ -76,7 +76,7 @@ mutation{
   updateProduct(updateProductData: {
     id: 1,
     name: "Update test",
-  	producer: "Producer"
+    producer: "Producer"
     amount: 15,
     price: 25
   }) {
@@ -136,7 +136,7 @@ mutation {
     name,
     price,
     producer,
-  	amount
+    amount
   }
 }
 ```
