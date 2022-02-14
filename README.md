@@ -17,8 +17,8 @@ $ npm install
 ## Running the app
 
 ```bash
-# production mode
-$ npm run start:prod
+# development mode
+$ npm run start:dev
 ```
 
 ## Access and use
