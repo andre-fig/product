@@ -144,6 +144,6 @@ mutation {
 ### Quantity of products 
 ```bash
 {
-	productsCount
+     productsCount
 }
 ```
