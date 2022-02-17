@@ -41,6 +41,7 @@ mutation{
     id
     name
     producer
+    amount
     price
   }
 }
@@ -124,7 +125,7 @@ mutation {
     name,
     price,
     producer,
-  	amount
+    amount
   }
 }
 ```
